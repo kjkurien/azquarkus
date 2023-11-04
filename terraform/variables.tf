@@ -1,11 +1,11 @@
 variable "resource_group" {
   description = "The resource group"
-  default = "AZQUARKUS_RG"
+  default = "azquarkus-rg"
 }
 
 variable "application_name" {
   description = "The Spring Boot application name"
-  default     = "AZQUARKUS"
+  default     = "azquarkus"
 }
 
 variable "location" {
