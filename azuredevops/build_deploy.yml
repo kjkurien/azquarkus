@@ -9,8 +9,7 @@ stages:
   jobs:
   - job: MavenPackageAndPublishArtifacts
     displayName: Maven Package and Publish Artifacts
-    pool:
-      vmImage: 'ubuntu-latest'
+    pool: macmini
 
     steps:
     - task: Maven@3
@@ -36,8 +35,7 @@ stages:
   - deployment: DeployLinuxWebApp
     displayName: Deploy Linux Web App
     environment: 'production'
-    pool:
-      vmImage: 'ubuntu-latest'
+    pool: macmini
     strategy:
       runOnce:
         deploy:
